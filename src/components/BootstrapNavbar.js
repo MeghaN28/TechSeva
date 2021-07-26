@@ -9,6 +9,7 @@ import {
   import Home from './Home';
   import AboutUs from './About';
   import ContactUs from './Contact';
+  import Logout from './Logout';
 
 class BootstrapNavbar extends React.Component{
 
@@ -24,10 +25,11 @@ class BootstrapNavbar extends React.Component{
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about-us">Contact Us</Nav.Link>
-                                    <Nav.Link href="/contact-us">About Us</Nav.Link>
+                                    <Nav.Link href="/about-us">About Us</Nav.Link>
+                                    <Nav.Link href="/contact-us">Contact Us</Nav.Link>
+                                    <Nav.Link href="/logout">Logout</Nav.Link>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Logout</NavDropdown.Item>
+                                        <NavDropdown.Item href="#"></NavDropdown.Item>
                                     </NavDropdown>
                                     </Nav>
                                     <Form inline>

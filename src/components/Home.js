@@ -2,8 +2,9 @@ import React from 'react';
 const home = () => {
     return (
        <div>
-          <h1>Home</h1>
-           <p>Home page body content</p>
+          <h3>Providing The Online Services to our Customers With All Features</h3>
+           <p>Aadhar</p>
+           <p>Free PAN</p>
        </div>
     );
 }
