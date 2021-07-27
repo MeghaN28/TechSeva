@@ -1,0 +1,16 @@
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+   
+}
+img {
+    width: 350px;
+    height: 450px;
+    background-color: rgb(78, 71, 71);
+}
+.caption {
+    display: block;
+    transform-origin: 50% 50%;
+}
