@@ -6,12 +6,11 @@ import {
     useParams,
   } from "react-router-dom";
   import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
-  import Home from './Home';
-  import AboutUs from './About';
-  import ContactUs from './Contact';
-  import Logout from './Logout';
+  import Home from '../../containers/Home/Home';
+  import AboutUs from '../../containers/About/About';
+  import ContactUs from '../../containers/Contact/Contact';
 
-class BootstrapNavbar extends React.Component{
+class Header extends React.Component{
 
     render(){
         return(
@@ -27,7 +26,6 @@ class BootstrapNavbar extends React.Component{
                                     <Nav.Link href="/">Home</Nav.Link>
                                     <Nav.Link href="/about-us">About Us</Nav.Link>
                                     <Nav.Link href="/contact-us">Contact Us</Nav.Link>
-                                    <Nav.Link href="/logout">Logout</Nav.Link>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                         <NavDropdown.Item href="#"></NavDropdown.Item>
                                     </NavDropdown>
@@ -58,4 +56,4 @@ class BootstrapNavbar extends React.Component{
     }
 }
 
-export default BootstrapNavbar;
+export default Header;

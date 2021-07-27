@@ -1,8 +1,11 @@
 import React from 'react';
-import IMAGES from '../images/image';
+import IMAGES from '../../images/index';
+//import Header from '../../components/Header/Header';
 function home() {
     return (
+        
        <div>
+           
           <h3>Providing The Online Services to our Customers With All Features</h3>
            
            <img src={IMAGES.logoServices} alt=""></img>
