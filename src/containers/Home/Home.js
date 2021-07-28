@@ -22,30 +22,30 @@ export default function home() {
   const classes = UseStyles();
     return (
       <div>
-        <h3>Providing The Online Services to our Customers With All Features</h3><br/>
-        <div class="element">
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={IMAGES.logoGovtJob}
-              title="Government Job"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Government Jobs
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Information if any
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              Learn More
-            </Button>
-          </CardActions>
-        </Card>
+         <h3>Providing The Online Services to our Customers With All Features</h3><br/>
+            <div class="element">
+                    <Card className={classes.root}>
+                <CardActionArea>
+                  <CardMedia
+                    className={classes.media}
+                    image={IMAGES.logoGovtJob}
+                    title="Government Job"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Government Jobs
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                      Information if any
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" color="primary">
+                    Learn More
+                  </Button>
+                </CardActions>
+              </Card>
         </div>
         <div class="element">
         <Card className={classes.root}>
