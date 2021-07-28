@@ -219,6 +219,33 @@ export default function home() {
         </CardActions>
       </Card>
       </div>
+      <div class="element">
+        <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={IMAGES.logoPan}
+            title="Pam Services"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Pan Card Services
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+            PAN is a ten-digit alphanumeric number provided by the Income Tax Government in the form of a laminated card to any "person" who applies for it or to whom the department allots the number without an application.
+            PAN allows the department to link all of the "person's" transactions to the department. Tax payments, TDS/TCS credits, and refunds of insufficient funds are examples of these transactions.
+
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
+      </div>
+     
      
       </div>
       );

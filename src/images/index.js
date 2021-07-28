@@ -7,7 +7,8 @@ const IMAGES={
     logoPartTime:require('./part_time_jobs.jpg').default,
     logoRationCard:require('./ration_card.jpg').default,
     logoVoterId:require('./voter_id.jpg').default,
-    logoVoterService:require('./voters_service_portal.jpg').default
+    logoVoterService:require('./voters_service_portal.jpg').default,
+    logoPan:require('./pan.jpg').default
 
 }
 export default IMAGES;
