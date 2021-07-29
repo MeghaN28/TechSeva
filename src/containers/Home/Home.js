@@ -11,21 +11,28 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Adhar from '../../components/Adhar/Adhar';
+import Marquee from "react-fast-marquee";
+import Box from '@material-ui/core/Box';
 //import Header from '../../components/Header/Header';
 const UseStyles = makeStyles({
   root: {
     maxWidth: 340,
   },
   media: {
-    height: 140,
+    height: 240,
   },
 });
 export default function home() {
   const classes = UseStyles();
     return (
       <div>
-         <h3>Providing The Online Services to our Customers With All Features</h3><br/>
+         <Marquee>
+            <h4>Offers Starting Soon from 1/8/2021 !!! Stay Tuned...!!</h4>
+          </Marquee>
+          <br/>
+         <h2><center>Providing The Online Services to our Customers With All Features</center></h2><br/>
             <div class="element">
+
                     <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -64,7 +71,9 @@ export default function home() {
               Ration Card Services
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Information if any
+            Ration cards are an official document issued by state governments in India to households that are eligible to purchase subsidised food grain from the Public Distribution System under the National Food Security Act (NFSA). They also serve as a common form of identification for many Indians.[1]
+
+Under the NFSA, all state governments in India have to identify households that are eligible for purchasing subsidised food grain from the Public Distribution System and provide them with ration cards. There are two types of ration cards under NFSA:[2]
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -112,7 +121,7 @@ export default function home() {
               Land Services
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Information if any
+            Property management is also the management of personal property, equipment, tooling, and physical capital assets that are acquired and used to build, repair, and maintain end item deliverables. Property management involves the processes, systems, and manpower required to manage the life cycle of all acquired property as defined above including acquisition, control, accountability, responsibility, maintenance, utilization, and disposition.
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -208,7 +217,7 @@ export default function home() {
               Voter Services
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Information if any
+            In some jurisdictions, enrollment may require an application being made by an eligible voter and registered persons to re-register or update registration details when they change residence or other relevant information changes. In some jurisdictions, an enrollment agency may receive change of address information from other government agencies, which is used to automatically update voter details
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -244,9 +253,13 @@ export default function home() {
           </Button>
         </CardActions>
       </Card>
+      <br/>
       </div>
-     
-     
+      <div>
+      <Marquee>
+            <h5>Scrolling text here !!... Scroll...</h5>
+          </Marquee>
+          </div>
       </div>
       );
     }

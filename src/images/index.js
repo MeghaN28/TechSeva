@@ -8,7 +8,8 @@ const IMAGES={
     logoRationCard:require('./ration_card.jpg').default,
     logoVoterId:require('./voter_id.jpg').default,
     logoVoterService:require('./voters_service_portal.jpg').default,
-    logoPan:require('./pan.jpg').default
+    logoPan:require('./pan.jpg').default,
+    logoTechSeva:require('./TechSeva.PNG').default
 
 }
 export default IMAGES;
