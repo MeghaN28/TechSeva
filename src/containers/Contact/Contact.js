@@ -7,6 +7,7 @@ const Contact = () => {
           <h1>Contact US</h1>
           <p>Contact US page body content</p>
           <h2>hi</h2>
+          
        </div>
     );
 }
