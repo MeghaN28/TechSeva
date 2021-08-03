@@ -10,13 +10,15 @@ import {
   import Home from '../../containers/Home/Home';
   import AboutUs from '../../containers/About/About';
   import ContactUs from '../../containers/Contact/Contact';
-
+  
 
 class Header extends React.Component{
 
     render(){
         return(
+         
             <div>
+                   
                 <div className="row">
                     <div className="col-md-24">
                         <Router>
@@ -48,6 +50,7 @@ class Header extends React.Component{
                                 </Route>
                             </Switch>
                         </Router>
+                   
                     </div>
                 </div>
             </div>

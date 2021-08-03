@@ -1,5 +1,6 @@
 import React from 'react';
 import IMAGES from '../../images/index';
+import video from '../../images/Google_Earth_Trend_of_India_❤️4k_full_screen_WhatsApp_status_Video___Incredible_India_status(4K).webm';
 import './Home.css';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
@@ -13,25 +14,41 @@ import Typography from '@material-ui/core/Typography';
 import Adhar from '../../components/Adhar/Adhar';
 import Marquee from "react-fast-marquee";
 import Box from '@material-ui/core/Box';
-//import Header from '../../components/Header/Header';
+import myVideo from '../.././images/india.mp4';
+//imimport video from './images/india.mp4';port Header from '../../components/Header/Header';
 const UseStyles = makeStyles({
   root: {
-    maxWidth: 340,
+    maxWidth: 350,
   },
   media: {
-    height: 240,
+    height: 250,
   },
 });
 export default function home() {
   const classes = UseStyles();
     return (
       <div>
+    
+        <video controls autoPlay loop muted style={{
+          width:"100%",
+          left:"50%",
+          top:"400",
+          bottom:"800",
+          objectFit:"cover",
+          transform:"translate(-50%,-50%)",
+          zIndex:"-1",
+          position: "fixed",
+          width: "500",
+          height: "100%",
+          backgroundSize: "cover"}}>
+          <source src={myVideo} type="video/mp4"></source>
+        </video>
          <Marquee>
             <h4>Offers Starting Soon from 1/8/2021 !!! Stay Tuned...!!</h4>
           </Marquee>
           <br/>
          <h2><center>Providing The Online Services to our Customers With All Features</center></h2><br/>
-            <div class="element">
+            <div class="element" style={{opacity: .8}}>
 
                     <Card className={classes.root}>
                 <CardActionArea>
@@ -52,13 +69,11 @@ export default function home() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                <Link href="/Adhar" onClick={Adhar}>
-                    Learn More
-                  </Link>
                 </CardActions>
               </Card>
         </div>
-        <div class="element">
+        <div class="element" style={{opacity: .8
+        }}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -66,6 +81,7 @@ export default function home() {
             image={IMAGES.logoRationCard}
             title="Ration Card Services"
           />
+          
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Ration Card Services
@@ -78,13 +94,11 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+          
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -102,13 +116,11 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+        
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -126,13 +138,10 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -150,13 +159,11 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+      
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -174,13 +181,10 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -198,13 +202,10 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -222,13 +223,10 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
         </CardActions>
       </Card>
       </div>
-      <div class="element">
+      <div class="element" style={{opacity: .8}}>
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -248,9 +246,6 @@ Under the NFSA, all state governments in India have to identify households that 
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
         </CardActions>
       </Card>
       <br/>
@@ -260,7 +255,8 @@ Under the NFSA, all state governments in India have to identify households that 
             <h5>Scrolling text here !!... Scroll...</h5>
           </Marquee>
           </div>
-      </div>
+          </div>
+      
       );
     }
     
