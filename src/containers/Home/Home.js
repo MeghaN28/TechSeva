@@ -48,20 +48,21 @@ export default function home() {
           </Marquee>
           <br/>
          <h2><center>Providing The Online Services to our Customers With All Features</center></h2><br/>
-            <div class="element" style={{opacity: .8}}>
-
-                    <Card className={classes.root}>
+            <div class="element" style={{opacity: .6}}>
+                
+                    <Card className={classes.root} >
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
                     image={IMAGES.logoGovtJob}
                     title="Government Job"
+                    
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
                       Government Jobs
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                    <Typography variant="body2" color="textSecondary" component="p" style={{opacity: .8}}>
                     There are several terms, words, and phrases associated with government job recruitment in India (known as Sarkari Naukri), therefore we must be aware of their definitions, descriptions, and meanings. If a Government Jobs vacancy Recruitment lexicon is developed, these words may be included.
                     The government's specific activity or function. For the purposes of recruitment, a government job is defined as a specific position in any government agency or organisation that performs work on behalf of the government. As a result, a government job is a position that executes on behalf of the government.
 
@@ -71,6 +72,7 @@ export default function home() {
                 <CardActions>
                 </CardActions>
               </Card>
+             
         </div>
         <div class="element" style={{opacity: .8
         }}>

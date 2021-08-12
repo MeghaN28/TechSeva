@@ -10,7 +10,7 @@ import {
   import Home from '../../containers/Home/Home';
   import AboutUs from '../../containers/About/About';
   import ContactUs from '../../containers/Contact/Contact';
-  
+  import Login from '../../containers/Login/Login';
 
 class Header extends React.Component{
 
@@ -31,7 +31,7 @@ class Header extends React.Component{
                                     <Nav.Link href="/about-us">About Us</Nav.Link>
                                     <Nav.Link href="/contact-us">Contact Us</Nav.Link>
                                     <Nav.Link href="/">Register</Nav.Link>
-                                    <Nav.Link href="/">Login</Nav.Link>
+                                    <Nav.Link href="/login">Login</Nav.Link>
                                     </Nav>
                                     <Form inline>
                                     </Form>
@@ -47,6 +47,9 @@ class Header extends React.Component{
                                 </Route>
                                 <Route path="/contact-us">
                                     <ContactUs />
+                                </Route>
+                                <Route path="/login">
+                                    <Login />
                                 </Route>
                             </Switch>
                         </Router>
