@@ -11,7 +11,8 @@ import {
   import AboutUs from '../../containers/About/About';
   import ContactUs from '../../containers/Contact/Contact';
   import Login from '../../containers/Login/Login';
-
+  import Profile from '../../containers/Profile/Profile';
+  import Register from '../../containers/Register/Register';
 class Header extends React.Component{
 
     render(){
@@ -30,8 +31,9 @@ class Header extends React.Component{
                                     <Nav.Link href="/">Home</Nav.Link>
                                     <Nav.Link href="/about-us">About Us</Nav.Link>
                                     <Nav.Link href="/contact-us">Contact Us</Nav.Link>
-                                    <Nav.Link href="/">Register</Nav.Link>
+                                    <Nav.Link href="/register">Register</Nav.Link>
                                     <Nav.Link href="/login">Login</Nav.Link>
+                                    <Nav.Link href="/profile">Profile</Nav.Link>
                                     </Nav>
                                     <Form inline>
                                     </Form>
@@ -50,6 +52,12 @@ class Header extends React.Component{
                                 </Route>
                                 <Route path="/login">
                                     <Login />
+                                </Route>
+                                <Route path="/profile">
+                                <Profile />
+                                </Route>
+                                <Route path="/register">
+                                <Register />
                                 </Route>
                             </Switch>
                         </Router>
