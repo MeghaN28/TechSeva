@@ -13,16 +13,20 @@ import {
   import Login from '../../containers/Login/Login';
   import Profile from '../../containers/Profile/Profile';
   import Register from '../../containers/Register/Register';
+  import Service from '../../containers/Service/Service';
+  import PartTime from '../../containers/PartTime/PartTime';
 class Header extends React.Component{
 
     render(){
         return(
+            
          
             <div>
                    
                 <div className="row">
                     <div className="col-md-24">
                         <Router>
+                        
                             <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                                 <img src={IMAGES.logoTechSeva} style={{width:100, marginTop: -7}} />
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -59,8 +63,15 @@ class Header extends React.Component{
                                 <Route path="/register">
                                 <Register />
                                 </Route>
+                                <Route path="/service">
+                                <Service/>
+                                </Route>
+                                <Route path="/parttime">
+                                <PartTime/>
+                                </Route>
                             </Switch>
                         </Router>
+                   
                    
                     </div>
                 </div>

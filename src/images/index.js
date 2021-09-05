@@ -9,7 +9,8 @@ const IMAGES={
     logoVoterId:require('./voter_id.jpg').default,
     logoVoterService:require('./voters_service_portal.jpg').default,
     logoPan:require('./pan.jpg').default,
-    logoTechSeva:require('./TechSeva.PNG').default
+    logoTechSeva:require('./TechSeva.PNG').default,
+    logoParr:require('./parttime.jpg').default
 
 }
 export default IMAGES;

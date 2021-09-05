@@ -1,7 +1,14 @@
 import React from 'react';
 import "./Login.css";
 import myVideo from '../.././images/india.mp4';
+import service from '../Service/Service';
+import { useHistory } from "react-router-dom";
 function Login() {
+  const history = useHistory();
+  
+  const handleRoute = () =>{ 
+    history.push("/service");
+  }
   return(
    <div>
    <video controls autoPlay loop muted style={{
@@ -24,7 +31,7 @@ function Login() {
         <h1>Login</h1>
         <input type="text" placeholder="Username"/>
         <input type="text" placeholder="Password"/>
-        <button>Login</button>
+        <button onClick={handleRoute}>Login</button>
         <p>Not a member? <span>Sign Up</span></p>
       </div>
     </div>
